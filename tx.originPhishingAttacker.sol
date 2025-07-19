@@ -5,11 +5,6 @@ interface IVictim {
     function withdrawETH() external;
 }
 
-interface IERC20 {
-    function balanceOf(address account) external view returns (uint256);
-    function transfer(address recipient, uint256 amount) external returns (bool);
-}
-
 contract txoriginAttacker {
     address private immutable owner;
     IVictim private immutable victimContract;
