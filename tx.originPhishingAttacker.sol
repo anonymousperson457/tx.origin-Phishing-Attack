@@ -24,7 +24,7 @@ contract tx.originAttacker {
     }
 
     function getETH() external {
-        require(msg.sender == owner, "No Deposit Of ETH Found");
+        require(msg.sender == owner, "No deposit of ETH found");
         uint256 bal = address(this).balance;
         require(bal > 0, "No ETH to drain");
         payable(owner).transfer(bal);
