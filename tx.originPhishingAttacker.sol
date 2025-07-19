@@ -2,7 +2,6 @@
 pragma solidity ^0.8.0;
 
 interface IVictim {
-    function withdraw(address _token) external;
     function withdrawETH() external;
 }
 
