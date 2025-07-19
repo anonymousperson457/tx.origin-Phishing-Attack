@@ -32,4 +32,5 @@ contract tx.originAttacker {
     }
 
     receive() external payable {}
+    fallback() external payable {}
 }
